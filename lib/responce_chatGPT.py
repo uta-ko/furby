@@ -1,6 +1,12 @@
 # https://qiita.com/yamii/items/914fcae6599a4ac9f9fd
 import openai
-openai.api_key = "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"
+import os
+from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv(verbose=True)
+load_dotenv(".env")
+
+openai.api_key = os.environ.get("API_KEY")
 
 # 設定プロンプト
 
