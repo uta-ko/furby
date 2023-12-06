@@ -2,3 +2,4 @@
 tests/.pytest_cache
 tests/out_audio
 out
+.env
